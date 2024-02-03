@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
+   
+<div id="main-container">
+    <div id="sidebar">
+      <a href="#" onclick="closeNav()">Close Sidebar</a>
 
-    
-  <div id="todoList">
-    <h2>To-Do List</h2>
-    <div class="inputbox">
-      <input required="required" type="text" id="taskInput">
-      <span>New task...</span>
-      <i></i>
+      <div>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+    </div>
+  
+    <div id="main-content">
+      <button id="openBtn" onclick="openNav()">Open Sidebar</button>
+    </div>
   </div>
-    <button onclick="addTask()" id="addButton" class="ui-btn">
-      <span>
-        Add Task 
-      </span>
-    </button>
-    <ul id="tasks"></ul>
-</div>
-  <script src="script.js"></script>
-
+      
+    <script src="script.js"></script>
 </body>
 </html>
