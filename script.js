@@ -1,9 +1,15 @@
-function openNav() {
-  document.getElementById("sidebar").style.width = "250px";
-  document.getElementById("main-content").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidebar").style.width = "0";
-  document.getElementById("main-content").style.marginLeft = "0";
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const addButtonList = document.querySelectorAll('.btn-primary');
+  
+  addButtonList.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const label = button.nextElementSibling;
+      
+      let count = parseInt(label.textContent);
+      
+      count++;
+      
+      label.textContent = count;
+    });
+  });
+});
